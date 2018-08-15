@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ListOfPlaces">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:padding="5sp">
+            <TextView
+                android:id="@+id/place_name"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:maxLength="25"
+                android:text="Name of place"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/place_detail"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:maxLength="22"
+                android:text="Detail"
+                android:textSize="16dp" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5sp"
+        android:background="#b0b0b4" />
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="azdeveloper.com.helpme.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp">
+    <EditText
+        android:layout_width="320sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edTxtSearch"
+        style="@style/EditorFieldStyle"
+        android:backgroundTint="#938e8e"
+        android:hint="search..."/>
+    <ImageView
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:id="@+id/searchIcon"
+        android:layout_marginTop="7sp"
+        android:src="@drawable/searchicon"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15sp"
+        android:layout_marginLeft="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick"/>
+        <TextView
+            android:id="@+id/Translated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Your Text:"
+            android:textSize="18sp"
+            android:textColor="@color/AllmyTextColor"/>
+        <TextView
+            android:id="@+id/txtTranslated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textSize="18sp"
+            android:layout_marginLeft="10sp"
+            android:textColor="@color/AllmyTextColor"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/commands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Commands:"
+            android:textSize="21sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/AllmyTextColor"/>
+    <TextView
+        android:id="@+id/nearestHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="1.where is the nearest hotel?"
+        android:textSize="20sp"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/AllmyTextColor"/>
+    <TextView
+        android:id="@+id/policeStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="2.where is the nearest police station?"
+        android:textSize="20sp"
+        android:textColor="@color/AllmyTextColor"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTaping"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/showVoicTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:textColor="#d6692d"
+        android:text="Tap here..."
+        android:textSize="15sp"/>
+</RelativeLayout>
+</LinearLayout>
